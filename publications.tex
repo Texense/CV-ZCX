@@ -1,0 +1,16 @@
+%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own
+\makerubrichead{Publication List}
+
+%% Assuming you've already given \addbibresource{own-bib.bib} in the main doc. Right? Right???
+\nocite{*}
+
+%% If you just want everything in one list
+% \printbibliography[heading={none}]
+%\bibliographystyle{siam}
+\printbibliography[heading={subbibliography},title={Manuscripts},type=article]
+
+%\printbibliography[heading={subbibliography},title={Conference Proceedings},type=inproceedings]
+
+\printbibliography[heading={subbibliography},title={Ongoing Work},filter={booksandchapters}]
+
+% \printbibliography[heading=subbibliography]
